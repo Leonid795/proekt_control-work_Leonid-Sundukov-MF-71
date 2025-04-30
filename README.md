@@ -33,3 +33,8 @@ ef handle_answer(update: Update, context: CallbackContext) -> None:
             update.message.reply_text(f"Неправильно. Правильный ответ: {correct_answer}. Напиши /question, чтобы попробовать еще раз.")
     else:
         update.message.reply_text("Сначала напиши /question, чтобы получить задачу.")
+ updater.start_polling()
+    updater.idle()
+
+if __name__ == '__main__':
+    main()

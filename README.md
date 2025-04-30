@@ -14,3 +14,7 @@ def button_message(message):
 	bot.send_message(message.chat.id,'Выберите что вам надо',reply_markup=markup)
 bot.infinity_polling()
 import math
+def generate_question():
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
+    operation = random.choice(['+', '-', '*'])

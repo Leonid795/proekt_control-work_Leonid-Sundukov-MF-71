@@ -18,3 +18,7 @@ def generate_question():
     num1 = random.randint(1, 10)
     num2 = random.randint(1, 10)
     operation = random.choice(['+', '-', '*'])
+def question(update: Update, context: CallbackContext) -> None:
+    question_text, answer = generate_question()
+    context.user_data['answer'] = answer  # Сохраняем правильный ответ
+    update.message.reply_text(question_text)

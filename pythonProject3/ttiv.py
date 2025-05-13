@@ -1,4 +1,4 @@
-import telebot
+import telebo
 import random
 import logging
 from telebot import types

@@ -113,4 +113,4 @@ def answer_handler(message):
 
 if __name__ == '__main__':
     logger.info("Бот запущен!")
-    bot.infinity_polling(
+    bot.infinity_polling()
